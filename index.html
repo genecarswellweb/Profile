@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gene Carswell | President | COO | Sr. Operations Executive</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --navy:#071b2f;
+    --gold:#d8b36a;
+    --text:#d6dce5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    height:100%;
+    overflow:hidden;
+    font-family:'Inter',sans-serif;
+    background:#04101d;
+}
+
+.executive-dashboard{
+    height:100vh;
+    display:grid;
+    grid-template-columns:42% 58%;
+}
+
+/* LEFT PANEL */
+
+.left-panel{
+    background:linear-gradient(
+        180deg,
+        #071b2f 0%,
+        #051423 100%
+    );
+
+    padding:32px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.brand-section h1{
+    font-family:'Playfair Display',serif;
+    color:white;
+    font-size:4rem;
+    line-height:1;
+    margin-bottom:8px;
+}
+
+.brand-section h2{
+    color:var(--gold);
+    font-size:1.15rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.brand-section p{
+    color:var(--text);
+    line-height:1.7;
+    font-size:1rem;
+    max-width:650px;
+}
+
+.email-highlight{
+    margin-top:18px;
+    color:var(--gold);
+    font-weight:600;
+    font-size:1.05rem;
+}
+
+.button-row{
+    margin-top:25px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:4px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#071b2f;
+}
+
+.btn-secondary{
+    color:white;
+    border:1px solid rgba(255,255,255,.35);
+}
+
+.metrics{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:8px;
+    margin:20px 0;
+}
+
+.metric{
+    background:rgba(255,255,255,.05);
+    border-radius:6px;
+    padding:12px 5px;
+    text-align:center;
+}
+
+.metric-value{
+    color:var(--gold);
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.metric-label{
+    color:white;
+    font-size:.72rem;
+    line-height:1.4;
+    text-transform:uppercase;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border-left:3px solid var(--gold);
+    border-radius:6px;
+    padding:14px;
+}
+
+.card h3{
+    color:var(--gold);
+    margin-bottom:8px;
+    font-size:.95rem;
+}
+
+.card p{
+    color:var(--text);
+    font-size:.85rem;
+    line-height:1.5;
+}
+
+.card a{
+    color:white;
+    text-decoration:none;
+}
+
+/* RIGHT PANEL */
+
+.right-panel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+    background:#020b14;
+}
+
+.poster-frame{
+    height:96vh;
+    width:auto;
+    overflow:hidden;
+    border-radius:10px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.55);
+}
+
+.poster-frame img{
+    height:100%;
+    width:auto;
+    object-fit:contain;
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:1200px){
+
+    html,
+    body{
+        overflow:auto;
+    }
+
+    .executive-dashboard{
+        grid-template-columns:1fr;
+        height:auto;
+    }
+
+    .poster-frame{
+        width:100%;
+        height:auto;
+    }
+
+    .poster-frame img{
+        width:100%;
+        height:auto;
+    }
+
+    .metrics{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .brand-section h1{
+        font-size:3rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="executive-dashboard">
+
+    <div class="left-panel">
+
+        <div class="brand-section">
+
+            <h1>GENE CARSWELL</h1>
+
+            <h2>
+                PRESIDENT | COO | SR. OPERATIONS EXECUTIVE
+            </h2>
+
+            <p>
+                Transforming manufacturing and industrial
+                organizations into high-performance enterprises
+                through operational excellence, lean transformation,
+                digital manufacturing, supply chain optimization,
+                and disciplined execution.
+            </p>
+
+            <div class="email-highlight">
+                bgcarswell@comcast.net
+            </div>
+
+            <div class="button-row">
+
+                <a class="btn btn-primary"
+                   href="mailto:bgcarswell@comcast.net">
+                    Email Gene
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://www.linkedin.com/in/genecarswell/"
+                   target="_blank">
+                    LinkedIn Profile
+                </a>
+
+            </div>
+
+        </div>
+
+        <section class="metrics">
+
+            <div class="metric">
+                <div class="metric-value">$1B+</div>
+                <div class="metric-label">
+                    Enterprise Leadership
+                </div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">16</div>
+                <div class="metric-label">
+                    Manufacturing Sites
+                </div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">3,800</div>
+                <div class="metric-label">
+                    Associates
+                </div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">20%</div>
+                <div class="metric-label">
+                    Throughput Improvement
+                </div>
+            </div>
+
+            <div class="metric">
+                <div class="metric-value">25%</div>
+                <div class="metric-label">
+                    Working Capital Reduction
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Operational Excellence</h3>
+
+                <p>
+                    Lean Transformation<br>
+                    Continuous Improvement<br>
+                    Industry 4.0
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Leadership Impact</h3>
+
+                <p>
+                    Global Manufacturing<br>
+                    Supply Chain Excellence<br>
+                    P&amp;L Leadership
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Executive Contact</h3>
+
+                <p>
+                    Board Opportunities<br>
+                    Advisory Roles<br>
+                    Operational Leadership
+                </p>
+
+                <br>
+
+                <a href="mailto:bgcarswell@comcast.net">
+                    bgcarswell@comcast.net
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="poster-frame">
+
+            <img
+                src="assets/images/executive-branding.jpg"
+                alt="Gene Carswell Executive Branding Poster">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
